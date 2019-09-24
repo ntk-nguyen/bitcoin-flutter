@@ -42,6 +42,7 @@ class CoinData {
   dynamic getCoinData() async {
     NetworkHelper networkHelper = NetworkHelper('$bitcoinAverageURL/$coin$currency');
     var coinData = await networkHelper.getData();
+    print(coinData);
     return coinData;
   }
 }
